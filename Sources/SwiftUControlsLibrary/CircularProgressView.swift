@@ -9,6 +9,9 @@ import SwiftUI
 
 @available(iOS 13.0.0, *)
 struct CircularProgressView: View {
+    
+    @Binding var progress: Double
+    
     var body: some View {
         Text("Hello, World!")
     }
@@ -17,6 +20,6 @@ struct CircularProgressView: View {
 @available(iOS 13.0.0, *)
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        CircularProgressView()
+        CircularProgressView(progress: .constant(1))
     }
 }
