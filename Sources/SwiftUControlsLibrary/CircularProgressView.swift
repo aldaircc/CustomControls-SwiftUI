@@ -13,7 +13,8 @@ struct CircularProgressView: View {
     @Binding var progress: Double
     
     var body: some View {
-        Text("Hello, World!")
+        Circle()
+            .foregroundColor(Color.red)
     }
 }
 
